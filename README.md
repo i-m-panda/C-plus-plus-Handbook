@@ -1,0 +1,2 @@
+# This repo will contain files that will focus on C++ concept explanation using code and comments
+### It can be used as a quick reference for anybody(especially me) looking for a referesher C++ language
