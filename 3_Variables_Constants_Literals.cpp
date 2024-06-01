@@ -102,7 +102,31 @@ const double PI = 3.1452;
   string s1 = "courses";
 */
 
+// TYPE CONVERSION/CASTING
+// Implict
+
+// most primitive datatypes can be converted implicitly, there maybe loss of information in such conversion
+// casting presedence: bool -> char -> short int -> int -> unsigned int -> long -> unsigned long -> long long ->
+// unsigned long long -> float -> double -> long double (used when you have 2 0r more types in an expression)
+
+// Explicit
+// consider the code below to understand the problem
+void divide() {
+  int x = 5, y = 2;
+  double divison = x/y;
+  cout << "5/2: " << divison << endl;
+}
+// division in above program would be 2 instead of 2.5 even if you are storing the result in double
+// division happens before assignment, division result in integer as operands are integer, therefore we need
+// to explicitly type one of the operand to double to get the result of operation as double
+// there are 2 ways to do it: 
+// 1. C style explict conversion: double divison = double(x)/y;
+// 2. C++ style explict conversion: double divison = static_cast<double>(x)/y; // advantage of static cast is 
+// that it does validaty check before conversion which doesn't happen in C style conversion
+
+
 int main() {
+  divide();
   extern_usecase();
   test();
   auto b = 20;
