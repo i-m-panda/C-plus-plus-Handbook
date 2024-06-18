@@ -78,10 +78,10 @@ int main() {
   // <DATA_TYPE> *<VARIABLE_NAME> is the notation to declare a pointer variable of type <DATA_TYPE>
   int *p = &a; // pointer to integer variable storing address of an integer variable, "&a" will return the address of "a"
   // p itself is also a variable so it's also stored in someplace in memory just like any other variable
-  std::cout << "address of a: " << p << "\n"; // print the address at which a is stored
-  std::cout << "address of a: " << &a << "\n"; // print the address at which a is stored
-  std::cout << "address of p: " << &p << "\n"; // print the address at which a is stored
-  std::cout << "value stored at a: " << *p << "\n"; // print the address at which a is stored, this is dereferencing
+  std::cout << "address of a: " << p << "\n"; // prints the address at which a is stored
+  std::cout << "address of a: " << &a << "\n"; // prints the address at which a is stored
+  std::cout << "address of p: " << &p << "\n"; // prints the address at which a is stored
+  std::cout << "value stored at a: " << *p << "\n"; // prints the value stored at address of a, this is dereferencing
   // you can use dereferencing to not only get the value at an address but to also modify the value at an address, like below:
   *p = 67543;
   std::cout << "value stored at a now is: " << a << ", using variable name\n";
