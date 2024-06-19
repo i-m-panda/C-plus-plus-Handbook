@@ -214,7 +214,7 @@ int main() {
 
   // CHARACTER ARRAY AND POINTERS
   // to store a string in a character array, size of the array >= no. of characters in a string + 1
-  // + 1 is because strings in character are terminated ny null character('\0')
+  // + 1 is because strings in character are terminated by null character('\0')
   char s1[20]; s1[0] = 'J'; s1[1] = 'O'; s1[2] = 'H'; s1[3] = 'N';
   std::cout << "\n" << s1 << "\n"; // results in undefined behaviour as string is not null terminated above, let's fix that
   s1[4] = '\0';
